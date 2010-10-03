@@ -5,6 +5,7 @@ import org.apache.wicket.markup.html.CSSPackageResource;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.link.Link;
 import org.faboo.web.components.HomePanel;
+import org.faboo.web.components.RSSSearchPanel;
 import org.faboo.web.components.TwitterSearchPanel;
 
 /**
@@ -45,7 +46,7 @@ public class HomePage extends WebPage {
         add(new Link<TwitterSearchPanel>("displayRSS") {
             @Override
             public void onClick() {
-                HomePage.this.addOrReplace(new TwitterSearchPanel("mainPlaceholder"));
+                HomePage.this.addOrReplace(new RSSSearchPanel("mainPlaceholder"));
             }
         });
     }

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.3-strict.dtd"
+      xml:lang="en" lang="en" dir="ltr">
+<head>
+    <title></title>
+</head>
+<body>
+
+<wicket:panel>
+    <h2 class="grid_12 alpha centered">Show RSS / Atom Feeds</h2>
+    <div class="clear"></div>
+
+    <div class="grid_5 alpha">
+
+        <form wicket:id="form" action="#">
+            <select wicket:id="feetsDDC"></select>
+            <input wicket:id="submitLink" type="button" value="show">
+        </form>
+
+    </div>
+    <div class="grid_7 omega">
+
+        <div wicket:id="items">
+            <p wicket:id="title" class="listentry" >this gets replaced</p>
+        </div>
+
+    </div>
+</wicket:panel>
+
+</body>
+</html>
