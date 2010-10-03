@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.3-strict.dtd"
+      xml:lang="en" lang="en" dir="ltr">
+<head>
+    <title></title>
+</head>
+<body>
+
+<wicket:panel>
+    <h2 class="grid_12 alpha centered">Search on Twitter</h2>
+    <div class="clear"></div>
+
+    <div class="grid_4 alpha">
+
+        <div class="grid_4">
+            <a wicket:id="searchWicket" href="#">Search for #wicket</a>
+        </div>
+        <div class="clear"></div>
+        <div class="grid_4">
+            <a wicket:id="searchODT" href="#">Search for #onedaytalk</a>
+        </div>
+        <div class="clear"></div>
+        <form wicket:id="form" action="#" class="grid_4 omega">
+            <input wicket:id="searchString" type="text">
+            <input wicket:id="submitLink" type="button" value="search">
+        </form>
+
+    </div>
+    <div class="grid_8 omega">
+        <p class="centered">Search results for:<span wicket:id="searchStringShow" class="centered"></span></p>
+
+        <div wicket:id="tweets">
+            <p wicket:id="text" class="listentry" >this gets replaced</p>
+        </div>
+
+    </div>
+</wicket:panel>
+
+</body>
+</html>
